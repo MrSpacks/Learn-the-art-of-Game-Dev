@@ -1,0 +1,15 @@
+:root{
+   --orange-color: #DA722C;
+   --blue-color: #057ADA;
+   --gray--color: #E8F7FB;
+   --navy_blue-color: #023047;
+   --black-color: #070917;
+   --purple-color: #6F7DFB;
+   
+}
+body{
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+
+}
