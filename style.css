@@ -1,3 +1,12 @@
+/* reset */
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
 :root{
    --orange-color: #DA722C;
    --blue-color: #057ADA;
@@ -5,11 +14,99 @@
    --navy_blue-color: #023047;
    --black-color: #070917;
    --purple-color: #6F7DFB;
-   
+
 }
 body{
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 900;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
 
+}
+
+/*               botton              */
+.btn{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: var(--orange-color);
+  width: 155px;
+  height: 59px;
+  border-radius: 24px;
+  color: white;
+  font-size: 18;
+  font-weight: 800;
+  text-decoration: none;
+}
+.btn_dark{
+  background-color: var(--navy_blue-color);
+}
+.btn_icon-img{
+  margin-right: 10px ;
+}
+
+
+/*                Header              */
+
+header{
+  color: white;
+  height: 100vh;
+  width: 100%;
+  background: rgb(111,125,251);
+  background: linear-gradient( rgba(111,125,251,1) 35%, rgba(38,48,140,1) 100%);
+}
+.wrapper{
+  max-width: 1135px;
+  margin: 0 auto;
+}
+.logo{
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+}
+nav{
+  z-index: 100;
+  top: 35px;
+  width: 1135px;
+  position: fixed;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  list-style: none;
+  margin: 0;
+
+}
+/*              Hero Sectoin           */
+
+.hero_section {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.left {
+}
+.btn {
+}
+.btn_icon {
+}
+.btn_icon-img {
+}
+.right {
+}
+.card_enrolled {
+}
+.content {
+}
+.card_bg {
+}
+.card_rating {
 }
