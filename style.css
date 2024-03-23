@@ -6,6 +6,12 @@ a {
   text-decoration: none;
   color: white;
 }
+h1, h2, h3 {
+  font-family: "Raleway", sans-serif;
+}
+p {
+  font-size: 16px;
+}
 
 :root{
    --orange-color: #DA722C;
@@ -47,10 +53,11 @@ body{
 /*                Header              */
 
 header{
+  margin-bottom: 50px;
   color: white;
   height: 100vh;
   width: 100%;
-  background: rgb(111,125,251);
+  /* background: rgb(111,125,251); */
   background: linear-gradient( rgba(111,125,251,1) 35%, rgba(38,48,140,1) 100%);
 }
 .wrapper{
@@ -86,27 +93,199 @@ nav ul{
 /*              Hero Sectoin           */
 
 .hero_section {
+  padding-top: 60px;
   display: flex;
   height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: space-between;
 }
-.left {
+.left{
+  max-width: 467px;
 }
-.btn {
+.left h1 {
+  font-size: 50px;  
+  line-height: 125%;
+  font-weight: 900;
 }
-.btn_icon {
+.left p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 35px;
 }
-.btn_icon-img {
-}
+
 .right {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  width: 50vw;
+  position: relative;
+  align-self: end;
+  justify-content: center;
 }
-.card_enrolled {
+.right img{
+  max-height: 582px;
+  vertical-align: middle;
+  margin-left: 150px;
 }
-.content {
+.achievements{
+  padding: 8px 32px;
+  color: var(--navy_blue-color);
+  position: absolute;
+  background-color: white;
+  width: 213px;
+  height: 98px;
+  border-radius: 24px;
+  box-shadow: 7px 10px 0px 0px  rgba(38,48,140,1);
 }
-.card_bg {
+.card_enrolled{
+  top: 120px;
+  left: 32px;
+}
+.card_enrolled h3{
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+}
+.content p {
+  display: flex;
+  margin-top: -8px;
+  justify-content: center;
+
+}
+
+.card_star h3{
+  margin: 0;
+}
+
+.card_star{
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.card_star img{
+  margin-left: 0;
 }
 .card_rating {
+  top: 330px;
+  left: 0;  
+}
+/* main section */
+.blue_line{
+  content: "";
+  background-color: var(--navy_blue-color);
+  height: 546px;
+  width: 30px;
+  border-radius: 15px;
+  position: relative;
+  left: 180px;
+  top: -30px;
+  z-index: -100;
+}
+.testimonials_section {
+  z-index: 1000;
+  position: relative;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--navy_blue-color);
+}
+
+.card_user {
+  border-radius: 24px;
+  box-shadow: 5px 5px 38px -10px rgba(0,0,0,0.75);
+  margin-bottom: 60px;
+  max-width: 442px;
+  position: relative;
+  z-index: 200;
+  background-color: white;
+}
+.blue {
+  background-color: var(--purple-color);
+}
+.card_propsal {
+  font-weight: bold;
+  border-radius: 24px;
+  color: white;
+  padding: 20px 30px;
+}
+.card_content {
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: start;
+  height: 120px;
+  padding-left: 30px;
+}
+.card_info-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card_img {
+  position: absolute;
+  right: 32px;
+  bottom: 20px;
+}
+.orange {
+  background-color: var(--orange-color);
+
+}
+
+.text_section{
+  max-width: 558px;
+}
+.text_section h2 {
+  font-size: 50px;  
+  line-height: 125%;
+  font-weight: 900;
+}
+.none{
+  height: 50px;
+}
+.man {
+  position: relative;
+  left: 20px;
+}
+.courses_section {
+  background: linear-gradient( rgba(111,125,251,1) 35%, rgba(38,48,140,1) 100%);
+  color: white;
+  padding-bottom: 50px;
+}
+
+.light {
+  line-height: 125%;
+  font-weight: 900;
+  text-align: center;
+  font-size: 60px;
+  padding-top: 50px;
+}
+.cours_cards {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.cours_card {
+  color: var(--navy_blue-color);
+  max-width: 632px;
+  background-color: white;
+  border-radius: 30px;
+}
+.card_info {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 0px 25px;
+}
+
+
+.duration {
+}
+.app_section {
+}
+.app_bottons {
+}
+.app_btn {
 }
