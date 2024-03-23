@@ -2,9 +2,14 @@
 *, *::after, *::before{
   box-sizing: border-box;
 }
-a {
+a{
   text-decoration: none;
   color: white;
+}
+ul, li, ol{
+  list-style:none;
+  padding:0;
+  margin:0;
 }
 h1, h2, h3 {
   font-family: "Raleway", sans-serif;
@@ -49,7 +54,6 @@ body{
   margin-right: 10px ;
 }
 
-
 /*                Header              */
 
 header{
@@ -90,6 +94,7 @@ nav ul{
   margin: 0;
 
 }
+
 /*              Hero Sectoin           */
 
 .hero_section {
@@ -280,12 +285,89 @@ nav ul{
   padding: 0px 25px;
 }
 
-
-.duration {
+.app_section h2{
+  line-height: 125%;
+  font-weight: 900;
+  text-align: center;
+  font-size: 60px;
+  padding-top: 50px;
+  color: var(--navy_blue-color);
 }
-.app_section {
+.app_section p{
+  text-align: center;
 }
 .app_bottons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px 0px;
 }
 .app_btn {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  justify-content: left;
+  width: 310px;
+  height: 100px;
+  background-color: #070917;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.app_btn img{
+  margin: 20px;
+}
+
+/* footer */
+footer{
+  background-color: var(--black-color);
+}
+.links_wrapper{
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.link {
+  margin: 20px 0px;
+}
+.links_conteiner {
+  
+}
+.links_conteiner h3 {
+  color: var(--orange-color);
+}
+.sosials {
+}
+.social {
+  margin: 0px 10px 30px 0;
+}
+.form {
+  font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  align-items: center;
+  position: relative;
+  padding-top: 10px;
+}
+.text{
+  padding-left: 15px;
+  height: 39px;
+  border-radius: 8px;
+  width: 520px;
+}
+.submit_btn {
+  width: 135px;
+  height: 30px;
+  border-radius: 6px;
+  color: white;
+  background-color: var(--navy_blue-color);
+  position: absolute;
+  right: 5px;
+  top: 15px;
+}
+.copywright {
+  padding: 0px 0px 20px 0px;
+  margin: 0 auto;
+  color: white;
+  background-color: var(--black-color);
 }
