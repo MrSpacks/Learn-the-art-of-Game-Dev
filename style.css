@@ -416,4 +416,47 @@ footer{
   .card_rating {
     top: 380px;
   }
+  .testimonials_section{
+    flex-direction: column-reverse;
+    height: 900px;
+    justify-content: space-around;
+    margin-top: 0;
+  }
+  .text_section {
+    max-width: 100%;
+  }
+  .card_user{
+    max-width: 100%;
+  }
+  .man{
+    left: 0;
+  }
+  .main_btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .blue_line{
+    position: absolute;
+    top: 313px;
+  }
+  /* OUR COURSES */
+  .cours_cards{
+    display: block;
+
+  }
+  .cours_card{
+    max-width: 100%;
+  }
+  .cours_card :last-child{
+    margin-bottom: 30px;
+  }
+  .cours_card img{
+    width: 100%;
+  }
+  /* FOOTER */
+  .links_wrapper{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
 }
