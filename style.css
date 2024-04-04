@@ -27,6 +27,9 @@ p {
    --purple-color: #6F7DFB;
 
 }
+.mobile_nav{
+  display: none;
+}
 body{
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
@@ -85,6 +88,9 @@ nav{
   font-weight: 700;
   font-size: 16px;
   color: white;
+}
+.scrolled{
+  background-color: var(--blue-color);
 }
 nav ul{
   display: flex;
@@ -416,6 +422,7 @@ footer{
   .card_rating {
     top: 380px;
   }
+  /* MAIN */
   .testimonials_section{
     flex-direction: column-reverse;
     height: 900px;
@@ -458,5 +465,27 @@ footer{
   .links_wrapper{
     display: grid;
     grid-template-columns: 2fr 2fr;
+  }
+}
+/* Adeptiv for MOBILE version */
+@media (max-width: 800px) {
+  nav{
+    display: none;
+  }
+  .mobile_nav{
+    display: flex;
+  }
+  .wrapper {
+    padding: 0 30px;
+  }
+  .right img {
+    max-height: 534px;
+  }
+  .card_enrolled {
+    top: 196px;
+    left: 0;
+  }
+  .left h1{
+    font-size: 36px;
   }
 }
