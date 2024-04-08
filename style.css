@@ -89,8 +89,12 @@ nav{
   font-size: 16px;
   color: white;
 }
-.scrolled{
-  background-color: var(--blue-color);
+.scrolled {
+  z-index: 10000;
+  transition: 0.3s;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: var(--purple-color) ;
 }
 nav ul{
   display: flex;
@@ -471,9 +475,11 @@ footer{
 @media (max-width: 800px) {
   nav{
     display: none;
+    max-width: 100%;
   }
   .mobile_nav{
     display: flex;
+    width: 85vw;
   }
   .wrapper {
     padding: 0 30px;
