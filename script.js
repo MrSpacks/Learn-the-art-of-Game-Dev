@@ -1,5 +1,10 @@
 const nav = document.querySelector("nav");
 const mobilNav = document.querySelector("nav.mobile_nav");
+const menuIcon = document.querySelector("#menu_open")
+const closeIcon = document.querySelector("#menu_close")
+const mobileMenuConteiner = document.querySelector(".mobile_menu_conteiner")
+
+
 
 window.addEventListener("scroll", () => {
         if (window.scrollY > 60) {
@@ -12,4 +17,11 @@ window.addEventListener("scroll", () => {
             console.log("remove class");
 
         }
+});
+
+menuIcon.addEventListener("click", () => {
+    mobileMenuConteiner.classList.add("active")
+});
+closeIcon.addEventListener("click", () => {
+    mobileMenuConteiner.classList.remove("active")
 });
