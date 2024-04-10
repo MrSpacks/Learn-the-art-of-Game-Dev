@@ -4,8 +4,7 @@ const menuIcon = document.querySelector("#menu_open")
 const closeIcon = document.querySelector("#menu_close")
 const mobileMenuConteiner = document.querySelector(".mobile_menu_conteiner")
 
-
-
+// scroll for fixed menu desktop and tablet version
 window.addEventListener("scroll", () => {
         if (window.scrollY > 60) {
             nav.classList.add("scrolled");
@@ -18,7 +17,7 @@ window.addEventListener("scroll", () => {
 
         }
 });
-
+//  menu for mobile version
 menuIcon.addEventListener("click", () => {
     mobileMenuConteiner.classList.add("active")
 });

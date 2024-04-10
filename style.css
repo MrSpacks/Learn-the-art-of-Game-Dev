@@ -11,6 +11,8 @@ ul, li, ol{
   padding:0;
   margin:0;
 }
+/* Global style */
+
 h1, h2, h3 {
   font-family: "Raleway", sans-serif;
 }
@@ -28,6 +30,9 @@ p {
 
 }
 .mobile_nav{
+  display: none;
+}
+.mobile_menu_conteiner{
   display: none;
 }
 body{
@@ -64,7 +69,6 @@ header{
   color: white;
   height: 100vh;
   width: 100%;
-  /* background: rgb(111,125,251); */
   background: linear-gradient( rgba(111,125,251,1) 35%, rgba(38,48,140,1) 100%);
 }
 .wrapper{
@@ -169,11 +173,9 @@ nav ul{
   justify-content: center;
 
 }
-
 .card_star h3{
   margin: 0;
 }
-
 .card_star{
   font-size: 36px;
   font-weight: bold;
@@ -416,6 +418,7 @@ footer{
   }
   .right img{
     margin-left: 55%;
+   
   }
   header{
     height: 1097px;
@@ -535,5 +538,24 @@ footer{
   }
   .text{
     width: 300px;
+  }
+  .light{
+    font-size: 30px;
+  }
+  .app_section h2{
+    font-size: 30px;
+  }
+  .app_bottons{
+    display: inline-block;
+  }
+  .app_btn:last-child{
+    margin-top: 20px;
+  }
+  .links_wrapper{
+    display: block;
+    text-align: center;
+  }
+  .submit_btn{
+    position: relative;
   }
 }
